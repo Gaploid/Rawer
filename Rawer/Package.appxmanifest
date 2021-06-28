@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="58254VictorKiselev.Rawer" Publisher="CN=A2231D89-305E-4EF7-86BB-E7E61076BD7E" Version="2.7.4.0" />
-  <mp:PhoneIdentity PhoneProductId="991cc82e-80d8-4fa0-a929-c6c7e6ea20e8" PhonePublisherId="f8e55c39-be6d-4541-8b1a-9903e6a1f97e" />
+  <Identity Name="" Publisher="" Version="2.7.4.0" />
+  <mp:PhoneIdentity PhoneProductId="" PhonePublisherId="" />
   <Properties>
     <DisplayName>Rawer</DisplayName>
     <PublisherDisplayName>Victor Kiselev</PublisherDisplayName>
