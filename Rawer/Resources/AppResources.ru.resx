@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPageAppBarEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="AboutPageAppBarFeedback" xml:space="preserve">
+    <value>Отзыв</value>
+  </data>
+  <data name="AboutPageEmail" xml:space="preserve">
+    <value>rawerapp@gmail.com</value>
+  </data>
+  <data name="AboutPageEmailSubject" xml:space="preserve">
+    <value>Rawer feedback</value>
+  </data>
+  <data name="AboutPageEmailText" xml:space="preserve">
+    <value>Контактная почта:</value>
+  </data>
+  <data name="AboutPageMainText" xml:space="preserve">
+    <value>Просмотр и редактирование фотографий в RAW формате.
+
+Внимание: На телефонах с небольшим количеством оперативной памяти есть вероятность того, что при открытии больших фотографии, приложение откроет их в половинном размере.</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>О приложении</value>
+  </data>
+  <data name="AboutPageVersionText" xml:space="preserve">
+    <value>Версия: </value>
+  </data>
+  <data name="CommonSizeB" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="CommonSizeGB" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="CommonSizeKB" xml:space="preserve">
+    <value>kB</value>
+  </data>
+  <data name="CommonSizeMB" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="DiagnosticEmailBody" xml:space="preserve">
+    <value>Упс, что-то пошло не так. Это очень печально и непростительно. Мы моментально приступим к исправлению этой ошибки, как только вы пришлите отчет об ошибки, нажав на кнопку отправить. Большущее спасибо заранее.  </value>
+  </data>
+  <data name="DiagnosticEmailTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ReminderContent" xml:space="preserve">
+    <value>Нам супер важно понять, что вы думаете о приложении или, что вам в нем не нравится. Пожалуйста поставьте оценку и напишите пару строк ваших мыслей об этом приложении.</value>
+  </data>
+  <data name="ReminderSkipFurther" xml:space="preserve">
+    <value>Больше не показывать.</value>
+  </data>
+  <data name="ReminderSkipFurtherTitle" xml:space="preserve">
+    <value>Оцените приложение</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>ru</value>
+  </data>
+  <data name="UpgradeFinal" xml:space="preserve">
+    <value>Все прошло отлично. Теперь вы можете редактировать фотографии в приложении.</value>
+  </data>
+  <data name="ViewerPageAppBarAbout" xml:space="preserve">
+    <value>о приложении</value>
+  </data>
+  <data name="ViewerPageAppBarEdit" xml:space="preserve">
+    <value>редактор</value>
+  </data>
+  <data name="ViewerPageAppBarExif" xml:space="preserve">
+    <value>exif</value>
+  </data>
+  <data name="ViewerPageAppBarSave" xml:space="preserve">
+    <value>сохранить</value>
+  </data>
+  <data name="ViewerPageAppBarShare" xml:space="preserve">
+    <value>рассказать</value>
+  </data>
+  <data name="ViewerPageAppBarUpgrade" xml:space="preserve">
+    <value>улучшить приложение</value>
+  </data>
+  <data name="ViewerPageLowMemoryBody" xml:space="preserve">
+    <value>Похоже, что у вас не хватает памяти на телефоне, что бы открыть это изображение в полный размер. Попробуем открыть это изображение в половинном размере.</value>
+  </data>
+  <data name="ViewerPageLowMemoryTitle" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="ViewerPageProgressSavingTitle" xml:space="preserve">
+    <value>Сохраняем изображение...</value>
+  </data>
+  <data name="ViewerPageProgressSharingTitle" xml:space="preserve">
+    <value>Ожидайте...</value>
+  </data>
+  <data name="ViewerPageSaveCompleted" xml:space="preserve">
+    <value>Ваше изображение сохранено в медиа библиотеку вашего телефона.</value>
+  </data>
+  <data name="ViewerPageTrialBody" xml:space="preserve">
+    <value>Добавьте возможность редактировать RAW фотографии прямо с вашего телефона. Изменять контрастность, экспозицию, яркость, насыщенность цвета, резкость, изменять оттенки.</value>
+  </data>
+  <data name="ViewerPageTrialcontinueButton" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="ViewerPageTrialOkButton" xml:space="preserve">
+    <value>улучшить</value>
+  </data>
+  <data name="ViewerPageTrialTitle" xml:space="preserve">
+    <value>Улучшение приложения</value>
+  </data>
+  <data name="ImageInfoPageAperture" xml:space="preserve">
+    <value>Диафрагма</value>
+  </data>
+  <data name="ImageInfoPageAuthor" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="ImageInfoPageDescription" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="ImageInfoPageFlash" xml:space="preserve">
+    <value>Вспышка</value>
+  </data>
+  <data name="ImageInfoPageFocal" xml:space="preserve">
+    <value>Фокусное расстояние</value>
+  </data>
+  <data name="ImageInfoPageHeight" xml:space="preserve">
+    <value>Высота</value>
+  </data>
+  <data name="ImageInfoPageISO" xml:space="preserve">
+    <value>ISO</value>
+  </data>
+  <data name="ImageInfoPageManufacture" xml:space="preserve">
+    <value>Производитель</value>
+  </data>
+  <data name="ImageInfoPageModel" xml:space="preserve">
+    <value>Модель</value>
+  </data>
+  <data name="ImageInfoPageName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="ImageInfoPageShotOrder" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="ImageInfoPageShutter" xml:space="preserve">
+    <value>Выдержка</value>
+  </data>
+  <data name="ImageInfoPageSize" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="ImageInfoPageSizeOnDisk" xml:space="preserve">
+    <value>Размер на диске</value>
+  </data>
+  <data name="ImageInfoPageSoftware" xml:space="preserve">
+    <value>ПО</value>
+  </data>
+  <data name="ImageInfoPageTime" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="ImageInfoPageTitle" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="ImageInfoPageWidth" xml:space="preserve">
+    <value>Ширина</value>
+  </data>
+  <data name="ViewerPageLoaderMainText" xml:space="preserve">
+    <value>загрузка...</value>
+  </data>
+  <data name="ViewerPageLoaderText" xml:space="preserve">
+    <value>Это может занять некоторое время. Тем временем почитайте интересные советы и факты о фото.</value>
+  </data>
+  <data name="ViewerPageLoaderText1" xml:space="preserve">
+    <value>Автофокус в фотоаппарате работает по принципу сравнения контрастности рядом лежащих пикселей. Иногда перевернув камеру можно добиться лучшей фокусировки!</value>
+  </data>
+  <data name="ViewerPageLoaderText2" xml:space="preserve">
+    <value>Фото сенсоры на матрице всех фотоаппаратов черно-белые. Производители используют разные методы, линзы и преломление света, чтобы улавливать цвета.</value>
+  </data>
+  <data name="ViewerPageLoaderText3" xml:space="preserve">
+    <value>Чтобы получить на каждом сенсоре/пикселе цвет используют микролинзы и призмы или цветовые фильтры, чтобы раскладывать свет на цвета и передавать его на фото сенсор.</value>
+  </data>
+  <data name="ViewerPageLoaderText4" xml:space="preserve">
+    <value>Чем больше открыта диафрагма/меньше ее значение, тем меньше глубина резкости и сильнее размывается фон.</value>
+  </data>
+  <data name="ViewerPageLoaderText5" xml:space="preserve">
+    <value>Постарайтесь размещать главный объект в точке золотого сечения. Это примерно на линии 2/3. Человек автоматически воспринимает такие снимки более красивыми.</value>
+  </data>
+  <data name="ViewerPageLoaderText6" xml:space="preserve">
+    <value>Фото с тремя планами дает эффект глубины. На переднем плане может быть часть дерева, на втором человек и на третьем - небо или лес.</value>
+  </data>
+  <data name="ViewerPageLoaderText7" xml:space="preserve">
+    <value>Зум на камерах в телефонах и других дешевых камерах всегда является композитным. После какого-то значения зума изображение просто увеличивается и обрезается в цифровом виде. Лучше выключить опцию digital зума, так как вы всегда сможете сделать это в пост обработке.</value>
+  </data>
+  <data name="ViewerPageLoaderText8" xml:space="preserve">
+    <value>Высокочастотный цветной шум (фото с телефона) намного эффективнее убирать в цветовой схеме YCbCr нежели в RGB и других.</value>
+  </data>
+  <data name="ViewerPageLoaderText9" xml:space="preserve">
+    <value>Один из самых больших объективов, который можно свободно купить весит 15 кг. и стоит $26 000. Sigma 200-500/2.8</value>
+  </data>
+  <data name="ImageInfoPageMp" xml:space="preserve">
+    <value>Мп</value>
+  </data>
+  <data name="ImageInfoPageNo" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ImageInfoPageSec" xml:space="preserve">
+    <value>сек</value>
+  </data>
+  <data name="ImageInfoPageYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="MainPageMainButton" xml:space="preserve">
+    <value>открыть файл</value>
+  </data>
+  <data name="MainPageMainText" xml:space="preserve">
+    <value>Выберите файл с вашего телефона или SD карты. Это может занять 10-20 сек.</value>
+  </data>
+  <data name="LIBRAW_COMMON_ERROR_text" xml:space="preserve">
+    <value>Похоже, ваш файл поврежден. Это очень печально. Может быть он был поврежден во время загрузки, попробуйте скачать его заново.</value>
+  </data>
+  <data name="LIBRAW_COMMON_ERROR_title" xml:space="preserve">
+    <value>Упс</value>
+  </data>
+  <data name="LIBRAW_FILE_UNSUPPORTED_Text" xml:space="preserve">
+    <value>Похоже, что данный формат не поддерживается. Это очень печально, но мы уже работаем над тем что бы увеличить количество поддерживаемых форматов.</value>
+  </data>
+  <data name="LIBRAW_FILE_UNSUPPORTED_Title" xml:space="preserve">
+    <value>Не поддерживаемый формат файла</value>
+  </data>
+  <data name="LIBRAW_UNSUFFICIENT_MEMORY_text" xml:space="preserve">
+    <value>Похоже, что на вашем телефоне не хватает памяти, что бы открыть этот файл даже в два раза меньшем размере. Это очень грустно. Попробуйте открыть что-нибудь другое.</value>
+  </data>
+  <data name="LIBRAW_UNSUFFICIENT_MEMORY_title" xml:space="preserve">
+    <value>Не хватает памяти</value>
+  </data>
+  <data name="SettingsPageTitle" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="SettingsPageAutoBrigtnessHeader" xml:space="preserve">
+    <value>Автояркость</value>
+  </data>
+  <data name="SettingsPageHalfSizeHeader" xml:space="preserve">
+    <value>Уменьшить фото в 2 раза, 
+ускорив в 4 раза скорость открытия</value>
+  </data>
+  <data name="SettingsPageWhiteBalanceHeader" xml:space="preserve">
+    <value>Брать баланс белого из профиля фото</value>
+  </data>
+  <data name="EditPageProgressBarWorking" xml:space="preserve">
+    <value>Обрабатываю....</value>
+  </data>
+  <data name="ViewerPageProgressBarTextSwap" xml:space="preserve">
+    <value>Обновляется изображение...</value>
+  </data>
+  <data name="SettingPageNoiseReductionHeader" xml:space="preserve">
+    <value>Подавление шума (замедлит открытие)</value>
+  </data>
+  <data name="MainPageAppBarLayoutGrid" xml:space="preserve">
+    <value>таблица</value>
+  </data>
+  <data name="MainPageAppBarLayoutList" xml:space="preserve">
+    <value>список</value>
+  </data>
+  <data name="MainPageAppBarOpen" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="MainPageFolderName" xml:space="preserve">
+    <value>Альбом камеры</value>
+  </data>
+  <data name="MainPageListBoxEmptyContent" xml:space="preserve">
+    <value>Поиск .dng файлов в альбоме камеры</value>
+  </data>
+  <data name="MainPageListBoxSearching" xml:space="preserve">
+    <value>Поиск файлов...</value>
+  </data>
+  <data name="AboutPageThanksText" xml:space="preserve">
+    <value>Большая благодарность:
+•	Muntadhar Haydar (Перевод на Арабский)
+•	Bruno Blanes (Перевод на Португальский)
+
+•	Richard Yates (Полезные советы и примеры фото)</value>
+  </data>
+  <data name="MainPageNoDNGFiles" xml:space="preserve">
+    <value>Похоже, что у вас нет .DNG файлов в альбоме камеры. Для того что бы начать снимать в формате RAW, пройдите в настройки камеры и включите режим "jpeg+DNG".
+
+
+
+или выберите фаил из другой папки</value>
+  </data>
+  <data name="SettingsPageJpegQuality" xml:space="preserve">
+    <value>JPEG качество компрессии</value>
+  </data>
+  <data name="SettingPageFunnyTextHeader" xml:space="preserve">
+    <value>Выключить текстовые подсказки</value>
+  </data>
+  <data name="ViewerPageLoaderText10" xml:space="preserve">
+    <value>Название Canon произошло от слова Kwanon, в честь тысячерукого буддийского божества милосердия.</value>
+  </data>
+  <data name="ViewerPageLoaderText11" xml:space="preserve">
+    <value>Название Nikon произошло изначально от Nippon Kogaku, означает «Японская оптика».</value>
+  </data>
+  <data name="ViewerPageLoaderText12" xml:space="preserve">
+    <value>Для портрета лучшая точка на уровне глаз.</value>
+  </data>
+  <data name="ViewerPageLoaderText13" xml:space="preserve">
+    <value>Для портрета в полный рост лучшая точка – на уровне пояса.</value>
+  </data>
+  <data name="ViewerPageLoaderText14" xml:space="preserve">
+    <value>Старайтесь кадрировать кадр так, чтобы линия горизонта не разделяла фотографию пополам. Зрителю будет легче сфокусировать внимание в кадре.</value>
+  </data>
+  <data name="ViewerPageLoaderText15" xml:space="preserve">
+    <value>Снимая движущийся объект (автомобиль, велосипедиста), всегда оставляйте свободное пространство впереди объекта.</value>
+  </data>
+  <data name="ViewerPageLoaderText16" xml:space="preserve">
+    <value>Первая «фотобумага» была из асфальта. Точнее, на медную или стеклянную пластину наносился асфальтовый лак.</value>
+  </data>
+  <data name="ViewerPageLoaderText17" xml:space="preserve">
+    <value>Самая дорогая фотография - «Фантом», сделанная Питером Ликом, была продана за $6 500 000</value>
+  </data>
+  <data name="ImageInfoPageFlashAuto" xml:space="preserve">
+    <value>авто</value>
+  </data>
+  <data name="ImageInfoPageLocation" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="ViewerPageSaveCompletedNotDefault" xml:space="preserve">
+    <value>Ваше изображение сохранено</value>
+  </data>
+  <data name="SettingPageSaveFileFormat" xml:space="preserve">
+    <value>Формат сохраняемого файла</value>
+  </data>
+  <data name="SettingsPageDeleteAllFiles" xml:space="preserve">
+    <value>Удалять</value>
+  </data>
+  <data name="SettingsClearCacheButton" xml:space="preserve">
+    <value>отчистить кеш</value>
+  </data>
+  <data name="SettingsClearCacheProgressText" xml:space="preserve">
+    <value>Идет отчистка кеша</value>
+  </data>
+  <data name="BlurTool" xml:space="preserve">
+    <value>Размытие</value>
+  </data>
+  <data name="BrightnessTool" xml:space="preserve">
+    <value>Яркость</value>
+  </data>
+  <data name="ContrastTool" xml:space="preserve">
+    <value>Контраст</value>
+  </data>
+  <data name="CropTool" xml:space="preserve">
+    <value>Кадрирование</value>
+  </data>
+  <data name="ExposureTool" xml:space="preserve">
+    <value>Экспозиция</value>
+  </data>
+  <data name="HighlightsTool" xml:space="preserve">
+    <value>Света</value>
+  </data>
+  <data name="HueTool" xml:space="preserve">
+    <value>Оттенки</value>
+  </data>
+  <data name="NoiseTool" xml:space="preserve">
+    <value>Шум</value>
+  </data>
+  <data name="ResizeTool" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="SaturationTool" xml:space="preserve">
+    <value>Насыщенность</value>
+  </data>
+  <data name="ShadowsTool" xml:space="preserve">
+    <value>Тени</value>
+  </data>
+  <data name="SharpnessTool" xml:space="preserve">
+    <value>Резкость</value>
+  </data>
+  <data name="TemperatureTool" xml:space="preserve">
+    <value>Температура</value>
+  </data>
+  <data name="UpgradePage12Proff" xml:space="preserve">
+    <value>12 Профессиональных инструментов</value>
+  </data>
+  <data name="UpgradePageEditPack" xml:space="preserve">
+    <value>RAWER EDIT PACK</value>
+  </data>
+</root>

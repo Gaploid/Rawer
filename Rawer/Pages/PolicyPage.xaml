@@ -1,0 +1,86 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Rawer.PolicyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+    
+    <phone:PhoneApplicationPage.Resources>
+        <ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="TextBox">
+             <ContentControl x:Name="ContentElement" BorderThickness="0" HorizontalContentAlignment="Stretch" Margin="{StaticResource PhoneTextBoxInnerMargin}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="Stretch" FontFamily="Portable User Interface"/>
+        </ControlTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Image  Source="/Assets/InsideLogo.png" Margin="16,6,0,96" Stretch="Fill" Grid.Row="0" Width="50" Height="50" HorizontalAlignment="Left"/>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="RAWER" Style="{StaticResource PhoneTextNormalStyle}" Margin="50,0,12,0" FontFamily="Segoe WP Light"/>
+            <TextBlock Text="Privacy policy" Margin="12,0,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="60"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <RichTextBox TextWrapping="Wrap" FontSize="22" FontFamily="Segoe WP Light">
+                        <Paragraph>
+                            <Bold>
+                                Data Controller and Owner
+                                <LineBreak/>Types of Data collected
+                            </Bold>
+                            <LineBreak/>Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies and Usage data.
+                            <LineBreak/>
+                            <LineBreak/> The RAWER app does not collect or send your images or photos outside of the app without your explicit permission.
+                            <LineBreak/>
+                            <LineBreak/> Other Personal Data collected may be described in other sections of this privacy policy or by dedicated explanation text contextually with the Data collection.
+The Personal Data may be freely provided by the User, or collected automatically when using this Application.
+Any use of Cookies - or of other tracking tools - by this Application or by the owners of third party services used by this Application, unless stated otherwise, serves to identify Users and remember their preferences, for the sole purpose of providing the service required by the User.
+Failure to provide certain Personal Data may make it impossible for this Application to provide its services.
+Users are responsible for any Personal Data of third parties obtained, published or shared through this Application and confirm that they have the third party's consent to provide the Data to the Owner.
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Bold>Mode and place of processing the Data
+Methods of processing</Bold><LineBreak/>The Data Controller processes the Data of Users in a proper manner and shall take appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.
+The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Data Controller, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of the site (administration, sales, marketing, legal, system administration) or external parties (such as third party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Data Controller at any time.
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Bold>Place</Bold>
+                            <LineBreak/>
+                            The Data is processed at the Data Controller's operating offices and in any other places where the parties involved with the processing are located. For further information, please contact the Data Controller.
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Bold>Retention time</Bold>
+                            <LineBreak/>
+                            The Data is kept for the time necessary to provide the service requested by the User, or stated by the purposes outlined in this document, and the User can always request that the Data Controller suspend or remove the data.
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Bold>The use of the collected Data</Bold>
+                            <LineBreak/>
+                            The Data concerning the User is collected to allow the Owner to provide its services, as well as for the following purposes: Analytics.
+The Personal Data used for each purpose is outlined in the specific sections of this document.
+
+                        </Paragraph>
+                    </RichTextBox>
+
+                    
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

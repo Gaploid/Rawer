@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPageAppBarEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="AboutPageAppBarFeedback" xml:space="preserve">
+    <value>Sugestões</value>
+  </data>
+  <data name="AboutPageEmail" xml:space="preserve">
+    <value>rawerapp@gmail.com</value>
+  </data>
+  <data name="AboutPageEmailSubject" xml:space="preserve">
+    <value>Sugestões Rawer</value>
+  </data>
+  <data name="AboutPageEmailText" xml:space="preserve">
+    <value>E-mail para contato:</value>
+  </data>
+  <data name="AboutPageMainText" xml:space="preserve">
+    <value>Abra e edite fotos da sua câmera no formato RAW.
+Aviso: Devido a limitação da memória em aparelhos intermediários, o aplicativo pode abrir grandes imagens com a metade do tamanho original.</value>
+  </data>
+  <data name="AboutPageThanksText" xml:space="preserve">
+    <value>Agradecimentos:
+
+• Muntadhar Haydar (tradução para o Árabe)
+
+• Bruno Blanes (tradução para o Português)
+
+• Richard Yates (dicas importantes e amostra de imagens)</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="AboutPageVersionText" xml:space="preserve">
+    <value>Versão: </value>
+  </data>
+  <data name="CommonSizeB" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="CommonSizeGB" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="CommonSizeKB" xml:space="preserve">
+    <value>kB</value>
+  </data>
+  <data name="CommonSizeMB" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="DiagnosticEmailBody" xml:space="preserve">
+    <value>Opa, algo errado ocorreu. Desculpe-nos por isso. Te dou a minha palavra de que será corrigido se você nos enviar o relatório de erros ao apertar o botão OK. Agradeço desde já.</value>
+  </data>
+  <data name="DiagnosticEmailTitle" xml:space="preserve">
+    <value>Erro do aplicativo</value>
+  </data>
+  <data name="EditPageProgressBarWorking" xml:space="preserve">
+    <value>Processando...</value>
+  </data>
+  <data name="ImageInfoPageAperture" xml:space="preserve">
+    <value>Abertura</value>
+  </data>
+  <data name="ImageInfoPageAuthor" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="ImageInfoPageDescription" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="ImageInfoPageFlash" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="ImageInfoPageFlashAuto" xml:space="preserve">
+    <value>automático</value>
+  </data>
+  <data name="ImageInfoPageFocal" xml:space="preserve">
+    <value>Foco</value>
+  </data>
+  <data name="ImageInfoPageHeight" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="ImageInfoPageISO" xml:space="preserve">
+    <value>ISO</value>
+  </data>
+  <data name="ImageInfoPageManufacture" xml:space="preserve">
+    <value>Fabricante</value>
+  </data>
+  <data name="ImageInfoPageModel" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="ImageInfoPageMp" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="ImageInfoPageName" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="ImageInfoPageNo" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="ImageInfoPageSec" xml:space="preserve">
+    <value>seg</value>
+  </data>
+  <data name="ImageInfoPageShotOrder" xml:space="preserve">
+    <value>Ordem de captura</value>
+  </data>
+  <data name="ImageInfoPageShutter" xml:space="preserve">
+    <value>Obturador</value>
+  </data>
+  <data name="ImageInfoPageSize" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="ImageInfoPageSizeOnDisk" xml:space="preserve">
+    <value>Tamanho em disco</value>
+  </data>
+  <data name="ImageInfoPageSoftware" xml:space="preserve">
+    <value>Software</value>
+  </data>
+  <data name="ImageInfoPageTime" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="ImageInfoPageTitle" xml:space="preserve">
+    <value>Informações</value>
+  </data>
+  <data name="ImageInfoPageWidth" xml:space="preserve">
+    <value>Largura</value>
+  </data>
+  <data name="ImageInfoPageYes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="LIBRAW_COMMON_ERROR_text" xml:space="preserve">
+    <value>Parece que há algo de errado com seu arquivo. Sinto muito por isso. Talves ele tenha sido corrompido durante o download. Tente recarregar o arquivo.</value>
+  </data>
+  <data name="LIBRAW_COMMON_ERROR_title" xml:space="preserve">
+    <value>Opa</value>
+  </data>
+  <data name="LIBRAW_FILE_UNSUPPORTED_Text" xml:space="preserve">
+    <value>Parece que este tipo de foto RAW não é suportado ainda. Sinto muito por isso. Vamos tentar corrigir isso.</value>
+  </data>
+  <data name="LIBRAW_FILE_UNSUPPORTED_Title" xml:space="preserve">
+    <value>Este tipo de arquivo não é suportado.</value>
+  </data>
+  <data name="LIBRAW_UNSUFFICIENT_MEMORY_text" xml:space="preserve">
+    <value>Parece que não há memória suficiente no seu dispositivo. Sinto muito por isso. Tente abrir uma imagem menor.</value>
+  </data>
+  <data name="LIBRAW_UNSUFFICIENT_MEMORY_title" xml:space="preserve">
+    <value>Não há memória suficiente.</value>
+  </data>
+  <data name="MainPageAppBarCheckMode" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="MainPageAppBarDelete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="MainPageAppBarLayoutGrid" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="MainPageAppBarLayoutList" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="MainPageAppBarOpen" xml:space="preserve">
+    <value>Abrir arquivo</value>
+  </data>
+  <data name="MainPageFolderName" xml:space="preserve">
+    <value>Rolo da câmera</value>
+  </data>
+  <data name="MainPageListBoxEmptyContent" xml:space="preserve">
+    <value>Procurando por arquivos .dng em Imagens da câmera</value>
+  </data>
+  <data name="MainPageListBoxSearching" xml:space="preserve">
+    <value>Pesquisando...</value>
+  </data>
+  <data name="MainPageMainButton" xml:space="preserve">
+    <value>abrir arquivo</value>
+  </data>
+  <data name="MainPageNoDNGFiles" xml:space="preserve">
+    <value>Parece que não há arquivos .DNG em Imagens da Câmera. Você pode ir para as configurações da Câmera e alterar o modo de captura para "jpeg + DNG".
+
+
+
+ou escolha um arquivo de outro local</value>
+  </data>
+  <data name="ReminderContent" xml:space="preserve">
+    <value>É de extremamente importante para nós saber o que você acha desse aplicativo. Por favor, avalie-nos e faça sua análise deste aplicativo.</value>
+  </data>
+  <data name="ReminderSkipFurther" xml:space="preserve">
+    <value>Não mostrar novamente</value>
+  </data>
+  <data name="ReminderSkipFurtherTitle" xml:space="preserve">
+    <value>Avalie Meu Aplicativo</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>pt</value>
+  </data>
+  <data name="SettingPageFunnyTextHeader" xml:space="preserve">
+    <value>Desativar textos engraçados durante o carregamento</value>
+  </data>
+  <data name="SettingPageNoiseReductionHeader" xml:space="preserve">
+    <value>Redução de ruído (aumenta o tempo de carregamento)</value>
+  </data>
+  <data name="SettingsPageAutoBrigtnessHeader" xml:space="preserve">
+    <value>Brilho automático</value>
+  </data>
+  <data name="SettingsPageHalfSizeHeader" xml:space="preserve">
+    <value>Foto com metade do tamanho. Abre 4x mais rápido</value>
+  </data>
+  <data name="SettingsPageJpegQuality" xml:space="preserve">
+    <value>Exportar em qualidade JPEG</value>
+  </data>
+  <data name="SettingsPageTitle" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="SettingsPageWhiteBalanceHeader" xml:space="preserve">
+    <value>Balanço de branco da captura</value>
+  </data>
+  <data name="UpgradeFinal" xml:space="preserve">
+    <value>Atualização efetuada com sucesso. Agora você pode editar fotos no aplicativo.</value>
+  </data>
+  <data name="ViewerPageAppBarAbout" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="ViewerPageAppBarDelete" xml:space="preserve">
+    <value>Excluir arquivo</value>
+  </data>
+  <data name="ViewerPageAppBarEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="ViewerPageAppBarExif" xml:space="preserve">
+    <value>Informações</value>
+  </data>
+  <data name="ViewerPageAppBarSave" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="ViewerPageAppBarShare" xml:space="preserve">
+    <value>Compartilhar</value>
+  </data>
+  <data name="ViewerPageAppBarUpgrade" xml:space="preserve">
+    <value>Atualizar o aplicativo</value>
+  </data>
+  <data name="ViewerPageLoaderMainText" xml:space="preserve">
+    <value>Trabalhando...</value>
+  </data>
+  <data name="ViewerPageLoaderText" xml:space="preserve">
+    <value>Abrindo e processando...
+Eu irei olhar para a foto se você não se importar.</value>
+  </data>
+  <data name="ViewerPageLoaderText1" xml:space="preserve">
+    <value>Foto inacreditável! Essas cores são fabulosas.</value>
+  </data>
+  <data name="ViewerPageLoaderText2" xml:space="preserve">
+    <value>Você definitivamente deveria se orgulhar desta foto.</value>
+  </data>
+  <data name="ViewerPageLoaderText3" xml:space="preserve">
+    <value>Vou ajustar as cores e adicionar sorrisos aos rostos tristes.</value>
+  </data>
+  <data name="ViewerPageLoaderText4" xml:space="preserve">
+    <value>Essa foto é INCRÍVEL! Estou impressionado!</value>
+  </data>
+  <data name="ViewerPageLoaderText5" xml:space="preserve">
+    <value>Quase pronto... Mais um segundo... Ou dois... Ou cinco...</value>
+  </data>
+  <data name="ViewerPageLoaderText6" xml:space="preserve">
+    <value>Esta foto é tão boa que estou escrevendo uma carta agora à minha família para falar dela.</value>
+  </data>
+  <data name="ViewerPageLoaderText7" xml:space="preserve">
+    <value>Parece que você é um verdadeiro profissional! Tiro meu chapéu para você.</value>
+  </data>
+  <data name="ViewerPageLoaderText8" xml:space="preserve">
+    <value>Essa foto é tão boa que acho que museus irão entrar numa guerra de licitação por ela um dia.</value>
+  </data>
+  <data name="ViewerPageLoaderText9" xml:space="preserve">
+    <value>Bokeh é a qualidade estética do ofuscamento produzido nas partes fora do foco de uma imagem produzida pela lente.</value>
+  </data>
+  <data name="ViewerPageLowMemoryBody" xml:space="preserve">
+    <value>Parece que você não tem memória suficiente para abrir esta imagem no tamanho original. Não se preocupe, tentaremos abrir ela com metade do tamanho, se não se importar.</value>
+  </data>
+  <data name="ViewerPageLowMemoryTitle" xml:space="preserve">
+    <value>Dica</value>
+  </data>
+  <data name="ViewerPageProgressBarTextSwap" xml:space="preserve">
+    <value>Atualizando imagem...</value>
+  </data>
+  <data name="ViewerPageProgressSavingTitle" xml:space="preserve">
+    <value>Salvando sua foto</value>
+  </data>
+  <data name="ViewerPageProgressSharingTitle" xml:space="preserve">
+    <value>Trabalhando...</value>
+  </data>
+  <data name="ViewerPageSaveCompleted" xml:space="preserve">
+    <value>Sua foto foi salva no álbum "Fotos salvas" do telefone.</value>
+  </data>
+  <data name="ViewerPageTrialBody" xml:space="preserve">
+    <value>Atualize o aplicativo para editar fotos no formato RAW direto do seu telefone. Altere contraste, exposição, brilho, saturação, nitidez e matiz.</value>
+  </data>
+  <data name="ViewerPageTrialcontinueButton" xml:space="preserve">
+    <value>cancelar</value>
+  </data>
+  <data name="ViewerPageTrialOkButton" xml:space="preserve">
+    <value>atualizar</value>
+  </data>
+  <data name="ViewerPageTrialTitle" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="ImageInfoPageLocation" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="ViewerPageSaveCompletedNotDefault" xml:space="preserve">
+    <value>Sua foto foi salva no álbum</value>
+  </data>
+  <data name="SettingPageSaveFileFormat" xml:space="preserve">
+    <value>Salve formato de arquivo</value>
+  </data>
+  <data name="SettingsPageDeleteAllFiles" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="SettingsClearCacheButton" xml:space="preserve">
+    <value>limpar cache</value>
+  </data>
+  <data name="SettingsClearCacheProgressText" xml:space="preserve">
+    <value>cache de compensação</value>
+  </data>
+  <data name="BlurTool" xml:space="preserve">
+    <value>Ofuscamento</value>
+  </data>
+  <data name="BrightnessTool" xml:space="preserve">
+    <value>Brilho</value>
+  </data>
+  <data name="ContrastTool" xml:space="preserve">
+    <value>Contraste</value>
+  </data>
+  <data name="CropTool" xml:space="preserve">
+    <value>Cortar</value>
+  </data>
+  <data name="ExposureTool" xml:space="preserve">
+    <value>Exposição</value>
+  </data>
+  <data name="HighlightsTool" xml:space="preserve">
+    <value>Destaques</value>
+  </data>
+  <data name="HueTool" xml:space="preserve">
+    <value>Matiz</value>
+  </data>
+  <data name="NoiseTool" xml:space="preserve">
+    <value>Ruído</value>
+  </data>
+  <data name="ResizeTool" xml:space="preserve">
+    <value>Redimensionar</value>
+  </data>
+  <data name="RotateTool" xml:space="preserve">
+    <value>Rotacionar</value>
+  </data>
+  <data name="SaturationTool" xml:space="preserve">
+    <value>Saturação</value>
+  </data>
+  <data name="ShadowsTool" xml:space="preserve">
+    <value>Sombras</value>
+  </data>
+  <data name="SharpnessTool" xml:space="preserve">
+    <value>Nitidez</value>
+  </data>
+  <data name="TemperatureTool" xml:space="preserve">
+    <value>Temperatura</value>
+  </data>
+  <data name="UpgradePage12Proff" xml:space="preserve">
+    <value>12 ferramentas profissionais</value>
+  </data>
+  <data name="UpgradePageEditPack" xml:space="preserve">
+    <value>RAWER EDIT PACK</value>
+  </data>
+</root>

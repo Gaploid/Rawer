@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="ru" />
+    <Language code="zh-Hans" />
+    <Language code="zh-CN" />
+    <Language code="zh-SG" />
+    <Language code="es" />
+    <Language code="it" />
+    <Language code="ar" />
+    <Language code="pt" />
+  </Languages>
+  <App xmlns="" ProductID="{991cc82e-80d8-4fa0-a929-c6c7e6ea20e8}" Title="Rawer" RuntimeType="Silverlight" Version="2.7.4.0" Genre="apps.normal" Author="Victor Kiselev" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="Victor Kiselev" PublisherID="{f8e55c39-be6d-4541-8b1a-9903e6a1f97e}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_REMOVABLE_STORAGE" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Pages/MainPage.xaml" ActivationPolicy="Resume" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="RawerToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <Title>Rawer</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets\wide icon.png</LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
+          </LargeBackBackgroundImageURI>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>True</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="Photos_Extra_Image_Editor" ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5632}" TaskID="_default" />
+      <FileTypeAssociation Name="FistWave" TaskID="_default" NavUriFragment="fileToken=%s">
+        <Logos>
+          <Logo Size="small" IsRelative="true">Assets/33.png</Logo>
+          <Logo Size="medium" IsRelative="true">Assets/69.png</Logo>
+          <Logo Size="large" IsRelative="true">Assets/176.png</Logo>
+        </Logos>
+        <SupportedFileTypes>
+          <FileType ContentType="application/sdk">.bmq</FileType>
+          <FileType ContentType="application/sdk">.cr2</FileType>
+          <FileType ContentType="application/sdk">.crw</FileType>
+          <FileType ContentType="application/sdk">.cs1</FileType>
+          <FileType ContentType="application/sdk">.dc2</FileType>
+          <FileType ContentType="application/sdk">.dcr</FileType>
+          <FileType ContentType="application/sdk">.dng</FileType>
+          <FileType ContentType="application/sdk">.erf</FileType>
+          <FileType ContentType="application/sdk">.fff</FileType>
+          <FileType ContentType="application/sdk">.hdr</FileType>
+          <FileType ContentType="application/sdk">.k25</FileType>
+          <FileType ContentType="application/sdk">.kdc</FileType>
+          <FileType ContentType="application/sdk">.mdc</FileType>
+          <FileType ContentType="application/sdk">.mos</FileType>
+          <FileType ContentType="application/sdk">.mrw</FileType>
+          <FileType ContentType="application/sdk">.nef</FileType>
+          <FileType ContentType="application/sdk">.orf</FileType>
+          <FileType ContentType="application/sdk">.pef</FileType>
+          <FileType ContentType="application/sdk">.pxn</FileType>
+        </SupportedFileTypes>
+      </FileTypeAssociation>
+      <FileTypeAssociation Name="SecondWave" TaskID="_default" NavUriFragment="fileToken=%s">
+        <Logos>
+          <Logo Size="small" IsRelative="true">Assets/33.png</Logo>
+          <Logo Size="medium" IsRelative="true">Assets/69.png</Logo>
+          <Logo Size="large" IsRelative="true">Assets/176.png</Logo>
+        </Logos>
+        <SupportedFileTypes>
+          <FileType ContentType="application/sdk">.bay</FileType>
+          <FileType ContentType="application/sdk">.raf</FileType>
+          <FileType ContentType="application/sdk">.raw</FileType>
+          <FileType ContentType="application/sdk">.rdc</FileType>
+          <FileType ContentType="application/sdk">.sr2</FileType>
+          <FileType ContentType="application/sdk">.srf</FileType>
+          <FileType ContentType="application/sdk">.x3f</FileType>
+          <FileType ContentType="application/sdk">.arw</FileType>
+          <FileType ContentType="application/sdk">.3fr</FileType>
+          <FileType ContentType="application/sdk">.cine</FileType>
+          <FileType ContentType="application/sdk">.ia</FileType>
+          <FileType ContentType="application/sdk">.kc2</FileType>
+          <FileType ContentType="application/sdk">.mef</FileType>
+          <FileType ContentType="application/sdk">.nrw</FileType>
+          <FileType ContentType="application/sdk">.qtk</FileType>
+          <FileType ContentType="application/sdk">.rw2</FileType>
+          <FileType ContentType="application/sdk">.sti</FileType>
+          <FileType ContentType="application/sdk">.drf</FileType>
+          <FileType ContentType="application/sdk">.dsc</FileType>
+          <FileType ContentType="application/sdk">.ptx</FileType>
+        </SupportedFileTypes>
+      </FileTypeAssociation>
+      <FileTypeAssociation Name="ThirdWave" TaskID="_default" NavUriFragment="fileToken=%s">
+        <Logos>
+          <Logo Size="small" IsRelative="true">Assets/33.png</Logo>
+          <Logo Size="medium" IsRelative="true">Assets/69.png</Logo>
+          <Logo Size="large" IsRelative="true">Assets/176.png</Logo>
+        </Logos>
+        <SupportedFileTypes>
+          <FileType ContentType="application/sdk">.bmp</FileType>
+          <FileType ContentType="application/sdk">.png</FileType>
+          <FileType ContentType="application/sdk">.jpeg</FileType>
+          <FileType ContentType="application/sdk">.jpg</FileType>
+          <FileType ContentType="application/sdk">.cap</FileType>
+          <FileType ContentType="application/sdk">.iiq</FileType>
+          <FileType ContentType="application/sdk">.rwz</FileType>
+        </SupportedFileTypes>
+      </FileTypeAssociation>
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

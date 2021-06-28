@@ -1,0 +1,215 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Rawer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    xmlns:local="clr-namespace:Rawer"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <phone:PhoneApplicationPage.Resources>
+        <local:ThumbnailConverter x:Key="thumbnailConverter"/>
+
+        <DataTemplate x:Key="DataWarpTemplate1" x:Name="WrapTemplate">
+            <Image Source="{Binding Bitmap}" Width="100" Height="100" Margin="12,12,0,0" Unloaded="Image_Unloaded"/>
+            <!--<Image Source="{Binding JpegFile, Converter={StaticResource thumbnailConverter}}" Width="100" Height="100" Margin="12,12,0,0" Unloaded="Image_Unloaded"/>-->
+            <!--<Image Source="{Binding img}" Width="100" Height="100" Margin="12,12,0,0"/>-->
+
+        </DataTemplate>
+
+        <DataTemplate x:Key="DataStackTemplate1" x:Name="StackTemplate">
+            <Grid  Margin="12,12,0,6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--<Image Grid.Column="0" Source="{Binding JpegFile, Converter={StaticResource thumbnailConverter}}" Width="100" Height="100" Unloaded="Image_Unloaded"/>-->
+                <Image Grid.Column="0" Source="{Binding Bitmap}" Width="100" Height="100" Unloaded="Image_Unloaded"/>
+
+                <StackPanel Grid.Column="1" Margin="12,0,24,0">
+                    <TextBlock Text="{Binding DngFile.Name}" TextWrapping="Wrap" FontFamily="Segoe WP Light" FontSize="20" />
+                    <TextBlock Text="{Binding DisplayDateTimeCreated}" Margin="0,4,0,0" FontFamily="Segoe WP Light" FontSize="18" Foreground="#FF7C7C7C" />
+                    <TextBlock Text="{Binding FileSizeDisplay}" Margin="0,4,0,0" FontFamily="Segoe WP Light" FontSize="18" Foreground="#FF7C7C7C" />
+
+                </StackPanel>
+                <!--<Image Source="{Binding img}" Width="100" Height="100" Margin="12,12,0,0"/>-->
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="DataEmptyTemplate1">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}" Margin="60" FontFamily="Segoe WP Light" Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26" TextAlignment="Center" />        
+        </DataTemplate>
+
+        <DataTemplate x:Key="DataEmptyTemplate2">
+            <Grid VerticalAlignment="Bottom">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}" Margin="60,60,60,120" FontFamily="Segoe WP Light" Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26" TextAlignment="Center" />
+                <Image Source="/Assets/arrow.png" FlowDirection="LeftToRight" Margin="98,0,0,0"  Width="Auto" Height="110" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="DataEmptyTemplateAR">
+            <Grid VerticalAlignment="Bottom">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}" Margin="60,60,60,120" FontFamily="Segoe WP Light" Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26" TextAlignment="Center" />
+                <Image Source="/Assets/arrow.png" Margin="0,0,98,0"  Width="Auto" Height="110" VerticalAlignment="Bottom" HorizontalAlignment="Right" />
+            </Grid>
+        </DataTemplate>
+
+        <Style x:Key="ItemCheckBoxStyle1" TargetType="telerikPrimitives:ItemCheckBox">
+            <Setter Property="Background" Value="{StaticResource PhoneRadioCheckBoxBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PhoneRadioCheckBoxBorderBrush}"/>
+            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}"/>
+            <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="telerikPrimitives:ItemCheckBox">
+                        <Grid Background="#7F000000" Margin="12,12,0,0">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="CheckBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneRadioCheckBoxPressedBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="CheckMark">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneButtonBasePressedForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="IndeterminateMark">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneButtonBasePressedForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="CheckBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="CheckMark">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="IndeterminateMark">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CheckStates">
+                                    <VisualState x:Name="Checked">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="CheckMark">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unchecked"/>
+                                    <VisualState x:Name="Indeterminate">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="IndeterminateMark">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid x:Name="CheckBox" Background="#7F000000">
+                                <Border x:Name="CheckBackground" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{StaticResource PhoneBorderThickness}" Background="{TemplateBinding Background}" HorizontalAlignment="Left" Height="32" IsHitTestVisible="False" VerticalAlignment="Center" Width="32"/>
+                                <Rectangle x:Name="IndeterminateMark" Fill="{StaticResource PhoneRadioCheckBoxCheckBrush}" HorizontalAlignment="Center" Height="16" IsHitTestVisible="False" Grid.Row="0" Visibility="Collapsed" VerticalAlignment="Center" Width="16"/>
+                                <Path x:Name="CheckMark" Data="M0,119 L31,92 L119,185 L267,0 L300,24 L122,250 z" Fill="{StaticResource PhoneRadioCheckBoxCheckBrush}" HorizontalAlignment="Center" Height="18" IsHitTestVisible="False" Stretch="Fill" StrokeThickness="2" StrokeLineJoin="Round" Visibility="Collapsed" VerticalAlignment="Center" Width="24"/>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <!--<Grid.Background>
+    		<ImageBrush Stretch="Fill" ImageSource="/Assets/AlignmentGrid.png"/>
+    	</Grid.Background>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- localIZATION NOTE:
+            To localize the displayed strings copy their values to appropriately named
+            keys in the app's neutral language resource file (AppResources.resx) then
+            replace the hard-coded text value between the attributes' quotation marks
+            with the binding clause whose path points to that string name.
+
+            For example:
+
+                Text="{Binding Path=LocalizedStrings.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+
+            This binding points to the template's string resource named "ApplicationTitle".
+
+            Adding supported languages in the Project Properties tab will create a
+            new resx file per language that can carry the translated values of your
+            UI strings. The binding in these examples will cause the value of the
+            attributes to be drawn from the .resx file that matches the
+            CurrentUICulture of the app at run time.
+         -->
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Image Grid.Row="0"  Source="/Assets/InsideLogo.png" Stretch="Fill"  Width="100" Height="100" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="0" Text="RAWER" Style="{StaticResource PhoneTextNormalStyle}" Margin="100,0,12,0" FontFamily="Segoe WP Light" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="0" Text="{Binding Path=LocalizedResources.MainPageFolderName, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="0,0,24,0" FontFamily="Segoe WP Light" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Right">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{StaticResource PhoneDisabledColor}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <telerikPrimitives:RadDataBoundListBox UseOptimizedManipulationRouting="False"  IsPullToRefreshEnabled="True" Margin="6"  Grid.Row="1" IsCheckModeEnabled="False" x:Name="radDataBoundListBox"  ItemTemplate="{StaticResource DataWarpTemplate1}"  CacheMode="BitmapCache"  AsyncBalanceMode="FillViewportFirst" ItemTap="radDataBoundListBox_ItemTap" EmptyContent="{Binding Path=LocalizedResources.MainPageListBoxEmptyContent, Source={StaticResource LocalizedStrings}}" EmptyContentTemplate="{StaticResource DataEmptyTemplate1}" CheckBoxStyle="{StaticResource ItemCheckBoxStyle1}">
+
+            <telerikPrimitives:RadDataBoundListBox.VirtualizationStrategyDefinition>
+                <!--<telerikPrimitives:StackVirtualizationStrategyDefinition Orientation="Vertical"/>-->
+                <telerikPrimitives:WrapVirtualizationStrategyDefinition Orientation="Horizontal" />
+            </telerikPrimitives:RadDataBoundListBox.VirtualizationStrategyDefinition>
+        </telerikPrimitives:RadDataBoundListBox>
+
+        <!--<StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            <RichTextBox IsReadOnly="True" VerticalAlignment="Top" FontSize="27" FontFamily="Segoe WP SemiLight" TextAlignment="Justify" Margin="37,150,36,0" >
+                <Paragraph>
+                    <Run Text="{Binding LocalizedStrings.MainPageMainText, Source={StaticResource LocalizedStrings}}" />
+                </Paragraph>
+            </RichTextBox>
+            <Button Content="{Binding Path=LocalizedStrings.MainPageMainButton, Source={StaticResource LocalizedStrings}}" Margin="34,20,34,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="#FF4488EA" Height="89" FontSize="28" Tap="Button_Tap" FontFamily="Segoe WP SemiLight" Foreground="{StaticResource PhoneButtonBasePressedForegroundBrush}"/>
+        </StackPanel>-->
+
+
+        <!--ContentPanel - place additional content here-->
+
+
+        <!--Uncomment to see an alignment grid to help ensure your controls are
+            aligned on common boundaries.  The image has a top margin of -32px to
+            account for the System Tray. Set this to 0 (or remove the margin altogether)
+            if the System Tray is hidden.
+
+            Before shipping remove this XAML and the image itself.-->
+        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

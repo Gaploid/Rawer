@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPageEmail" xml:space="preserve">
+    <value>rawerapp@gmail.com</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="DiagnosticEmailBody" xml:space="preserve">
+    <value>糟糕，出错了。抱歉。如果您按一下“确定”按钮向我们发送错误报告，我们保证会修复它。在此先感谢您的支持。  </value>
+  </data>
+  <data name="DiagnosticEmailTitle" xml:space="preserve">
+    <value>应用错误</value>
+  </data>
+  <data name="ReminderContent" xml:space="preserve">
+    <value>了解您对这款应用的看法对于我们来说非常重要。请对我们的应用进行评价。</value>
+  </data>
+  <data name="ReminderSkipFurther" xml:space="preserve">
+    <value>跳过再次提醒</value>
+  </data>
+  <data name="ReminderSkipFurtherTitle" xml:space="preserve">
+    <value>评价我的应用</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>zh-CN</value>
+  </data>
+  <data name="UpgradeFinal" xml:space="preserve">
+    <value>成功升级。现在您可以在应用中编辑照片。</value>
+  </data>
+  <data name="ViewerPageAppBarAbout" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="ViewerPageAppBarEdit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="ViewerPageAppBarExif" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="ViewerPageAppBarSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="ViewerPageAppBarShare" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="ViewerPageAppBarUpgrade" xml:space="preserve">
+    <value>升级应用</value>
+  </data>
+  <data name="ViewerPageLowMemoryBody" xml:space="preserve">
+    <value>您似乎没有足够的内存按全尺寸打开这张照片。别担心，如果您不介意的话，我们将尝试按半尺寸打开它。</value>
+  </data>
+  <data name="ViewerPageLowMemoryTitle" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="ViewerPageProgressSavingTitle" xml:space="preserve">
+    <value>正在保存照片</value>
+  </data>
+  <data name="ViewerPageProgressSharingTitle" xml:space="preserve">
+    <value>正在处理...</value>
+  </data>
+  <data name="ViewerPageSaveCompleted" xml:space="preserve">
+    <value>您的照片已保存至手机媒体库。</value>
+  </data>
+  <data name="ViewerPageTrialBody" xml:space="preserve">
+    <value>升级应用以直接在您的手机编辑原始照片。改变对比度、曝光、亮度、饱和度、锐度和色调。</value>
+  </data>
+  <data name="ViewerPageTrialcontinueButton" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ViewerPageTrialOkButton" xml:space="preserve">
+    <value>升级</value>
+  </data>
+  <data name="ViewerPageTrialTitle" xml:space="preserve">
+    <value>升级</value>
+  </data>
+  <data name="AboutPageMainText" xml:space="preserve">
+    <value>打开和编辑的RAW相机拍摄的照片。
+
+注意：由于低内存手机的内存限制，我们的应用可以按半尺寸打开大型照片。</value>
+  </data>
+  <data name="CommonSizeB" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="CommonSizeGB" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="CommonSizeKB" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="CommonSizeMB" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="AboutPageEmailText" xml:space="preserve">
+    <value>联系电子邮件：</value>
+  </data>
+  <data name="AboutPageVersionText" xml:space="preserve">
+    <value>版本： </value>
+  </data>
+  <data name="AboutPageAppBarEmail" xml:space="preserve">
+    <value>发送电邮</value>
+  </data>
+  <data name="AboutPageAppBarFeedback" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="AboutPageEmailSubject" xml:space="preserve">
+    <value>Rawer feedback</value>
+  </data>
+  <data name="ViewerPageLoaderText" xml:space="preserve">
+    <value>正在打开和处理…
+如果您不介意的话，我会看一下照片。</value>
+  </data>
+  <data name="ViewerPageLoaderText1" xml:space="preserve">
+    <value>令人难以置信的照片！这些颜色很给力。</value>
+  </data>
+  <data name="ViewerPageLoaderText9" xml:space="preserve">
+    <value>散景是镜头拍摄的照片不在焦点的部分产生的模糊的美学特质。</value>
+  </data>
+  <data name="ViewerPageLoaderText2" xml:space="preserve">
+    <value>您绝对应该为这张照片感到骄傲。</value>
+  </data>
+  <data name="ViewerPageLoaderText3" xml:space="preserve">
+    <value>我会调整一下颜色，为阴郁的面孔添加一些笑容。</value>
+  </data>
+  <data name="ViewerPageLoaderText4" xml:space="preserve">
+    <value>这是一张神奇的照片！我被雷倒了！</value>
+  </data>
+  <data name="ViewerPageLoaderText5" xml:space="preserve">
+    <value>几乎要完成了... 还差一秒... 两秒... 五秒... </value>
+  </data>
+  <data name="ViewerPageLoaderText6" xml:space="preserve">
+    <value>这张照片真棒，我要马上写一封信告诉我的家人。</value>
+  </data>
+  <data name="ViewerPageLoaderText7" xml:space="preserve">
+    <value>看起来您是真正的专家！我向您脱帽致意。</value>
+  </data>
+  <data name="ViewerPageLoaderText8" xml:space="preserve">
+    <value>这张照片拍得这么给力，我认为日后有一天许多博物馆都会来争先竞购它。</value>
+  </data>
+  <data name="ViewerPageLoaderMainText" xml:space="preserve">
+    <value>正在处理...</value>
+  </data>
+  <data name="ImageInfoPageAperture" xml:space="preserve">
+    <value>光圈</value>
+  </data>
+  <data name="ImageInfoPageAuthor" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="ImageInfoPageDescription" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="ImageInfoPageFlash" xml:space="preserve">
+    <value>闪光</value>
+  </data>
+  <data name="ImageInfoPageFocal" xml:space="preserve">
+    <value>焦距</value>
+  </data>
+  <data name="ImageInfoPageHeight" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="ImageInfoPageISO" xml:space="preserve">
+    <value>ISO</value>
+  </data>
+  <data name="ImageInfoPageManufacture" xml:space="preserve">
+    <value>制造商</value>
+  </data>
+  <data name="ImageInfoPageModel" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="ImageInfoPageMp" xml:space="preserve">
+    <value>百万像素</value>
+  </data>
+  <data name="ImageInfoPageName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ImageInfoPageNo" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="ImageInfoPageSec" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="ImageInfoPageShotOrder" xml:space="preserve">
+    <value>拍摄顺序</value>
+  </data>
+  <data name="ImageInfoPageShutter" xml:space="preserve">
+    <value>快门</value>
+  </data>
+  <data name="ImageInfoPageSize" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="ImageInfoPageSizeOnDisk" xml:space="preserve">
+    <value>磁盘大小</value>
+  </data>
+  <data name="ImageInfoPageSoftware" xml:space="preserve">
+    <value>软件</value>
+  </data>
+  <data name="ImageInfoPageTime" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="ImageInfoPageTitle" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="ImageInfoPageWidth" xml:space="preserve">
+    <value>宽度</value>
+  </data>
+  <data name="ImageInfoPageYes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="MainPageMainButton" xml:space="preserve">
+    <value>打开文件</value>
+  </data>
+  <data name="MainPageMainText" xml:space="preserve">
+    <value>从手机、存储卡或 OneDrive 应用中选择文件。处理时间可能需要 10-20 秒。</value>
+  </data>
+  <data name="LIBRAW_COMMON_ERROR_text" xml:space="preserve">
+    <value>抱歉，您的文件似乎有点问题。可能是下载过程中损坏了。请尝试重新加载。</value>
+  </data>
+  <data name="LIBRAW_COMMON_ERROR_title" xml:space="preserve">
+    <value>糟糕</value>
+  </data>
+  <data name="LIBRAW_FILE_UNSUPPORTED_Text" xml:space="preserve">
+    <value>抱歉，此类原始照片尚不支持。我们会尽量解决这个问题。</value>
+  </data>
+  <data name="LIBRAW_FILE_UNSUPPORTED_Title" xml:space="preserve">
+    <value>不支持的文件类型</value>
+  </data>
+  <data name="LIBRAW_UNSUFFICIENT_MEMORY_text" xml:space="preserve">
+    <value>抱歉，您的设备似乎没有足够的内存。请尝试打开小一点的照片。</value>
+  </data>
+  <data name="LIBRAW_UNSUFFICIENT_MEMORY_title" xml:space="preserve">
+    <value>内存不足</value>
+  </data>
+  <data name="SettingsPageTitle" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsPageAutoBrigtnessHeader" xml:space="preserve">
+    <value>自动亮度</value>
+  </data>
+  <data name="SettingsPageHalfSizeHeader" xml:space="preserve">
+    <value>半尺寸照片。打开照片的速度快 4 倍</value>
+  </data>
+  <data name="SettingsPageWhiteBalanceHeader" xml:space="preserve">
+    <value>拍摄白平衡</value>
+  </data>
+  <data name="EditPageProgressBarWorking" xml:space="preserve">
+    <value>正在处理...</value>
+  </data>
+  <data name="ViewerPageProgressBarTextSwap" xml:space="preserve">
+    <value>正在更新照片...</value>
+  </data>
+  <data name="SettingPageNoiseReductionHeader" xml:space="preserve">
+    <value>降噪（增加开放时间）</value>
+  </data>
+  <data name="MainPageAppBarLayoutGrid" xml:space="preserve">
+    <value>网格</value>
+  </data>
+  <data name="MainPageAppBarLayoutList" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="MainPageAppBarOpen" xml:space="preserve">
+    <value>打开文件</value>
+  </data>
+  <data name="MainPageFolderName" xml:space="preserve">
+    <value>相册</value>
+  </data>
+  <data name="MainPageListBoxEmptyContent" xml:space="preserve">
+    <value>搜索在相机胶卷.DNG文件</value>
+  </data>
+  <data name="MainPageListBoxSearching" xml:space="preserve">
+    <value>正在搜索...</value>
+  </data>
+  <data name="AboutPageThanksText" xml:space="preserve">
+    <value>特别感谢过： 
+•Muntadhar Haydar（翻译阿拉伯语）
+•Bruno Blanes 
+•Richard Yates（有用的提示和照片样本）</value>
+  </data>
+  <data name="MainPageNoDNGFiles" xml:space="preserve">
+    <value>没有.DNG文件。诺基亚摄像头的设置，启用RAW模式“JPEG+ DNG”
+
+
+
+或者从另一个位置选择文件</value>
+  </data>
+  <data name="SettingsPageJpegQuality" xml:space="preserve">
+    <value>JPEG出口质量</value>
+  </data>
+  <data name="SettingPageFunnyTextHeader" xml:space="preserve">
+    <value>关闭上加载页面有趣的文字</value>
+  </data>
+  <data name="ImageInfoPageFlashAuto" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="ImageInfoPageLocation" xml:space="preserve">
+    <value>地点</value>
+  </data>
+  <data name="ViewerPageSaveCompletedNotDefault" xml:space="preserve">
+    <value>您的照片已保存至</value>
+  </data>
+  <data name="SettingPageSaveFileFormat" xml:space="preserve">
+    <value>保存文件格式</value>
+  </data>
+  <data name="SettingsPageDeleteAllFiles" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SettingsClearCacheButton" xml:space="preserve">
+    <value>清除缓存</value>
+  </data>
+  <data name="SettingsClearCacheProgressText" xml:space="preserve">
+    <value>清除缓存</value>
+  </data>
+  <data name="BlurTool" xml:space="preserve">
+    <value>模糊</value>
+  </data>
+  <data name="BrightnessTool" xml:space="preserve">
+    <value>亮度</value>
+  </data>
+  <data name="ContrastTool" xml:space="preserve">
+    <value>对比度</value>
+  </data>
+  <data name="CropTool" xml:space="preserve">
+    <value>修剪</value>
+  </data>
+  <data name="ExposureTool" xml:space="preserve">
+    <value>曝光</value>
+  </data>
+  <data name="HighlightsTool" xml:space="preserve">
+    <value>亮点</value>
+  </data>
+  <data name="HueTool" xml:space="preserve">
+    <value>色调</value>
+  </data>
+  <data name="NoiseTool" xml:space="preserve">
+    <value>杂色</value>
+  </data>
+  <data name="ResizeTool" xml:space="preserve">
+    <value>调整大小</value>
+  </data>
+  <data name="SaturationTool" xml:space="preserve">
+    <value>饱和度</value>
+  </data>
+  <data name="ShadowsTool" xml:space="preserve">
+    <value>阴影</value>
+  </data>
+  <data name="SharpnessTool" xml:space="preserve">
+    <value>锐度</value>
+  </data>
+  <data name="TemperatureTool" xml:space="preserve">
+    <value>温度</value>
+  </data>
+  <data name="UpgradePage12Proff" xml:space="preserve">
+    <value>12专业工具</value>
+  </data>
+  <data name="UpgradePageEditPack" xml:space="preserve">
+    <value>RAWER 编辑组</value>
+  </data>
+</root>

@@ -1,0 +1,156 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Models="clr-namespace:Rawer.Models"
+    xmlns:Formaters="clr-namespace:Rawer.Formaters"
+    xmlns:chart="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Chart"
+    xmlns:chartEngine="clr-namespace:Telerik.Charting;assembly=Telerik.Windows.Controls.Chart"
+    x:Class="Rawer.ImageInfoPage"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False" >
+    <phone:PhoneApplicationPage.Resources>
+       
+        
+        <DataTemplate x:Key="DataItemTemplate">
+            <Grid Margin="0,0,0,30" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" Grid.Column="0"  TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26" Margin="0,0,30,0" />
+                <RichTextBox HorizontalAlignment="Left" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26" >
+                    <Paragraph>                        
+                        <Hyperlink NavigateUri="{Binding URL}" TargetName="_blank" >
+                            <Run Text="{Binding Value}"/>
+                        </Hyperlink>
+                    </Paragraph>
+                </RichTextBox>
+            </Grid>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    <phone:PhoneApplicationPage.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal"/>
+    </phone:PhoneApplicationPage.FontSize>
+    <phone:PhoneApplicationPage.Foreground>
+        <StaticResource ResourceKey="PhoneForegroundBrush"/>
+    </phone:PhoneApplicationPage.Foreground>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Image  Source="/Assets/InsideLogo.png" Margin="15,6,0,0" Stretch="Fill" Grid.Row="0" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,12">
+            <TextBlock Text="RAWER" Style="{StaticResource PhoneTextNormalStyle}" Margin="50,0,12,0" FontFamily="Segoe WP Light"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.ImageInfoPageTitle, Source={StaticResource LocalizedStrings}}" Margin="8,0,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="60"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <ScrollViewer Grid.Row="1">
+            <StackPanel x:Name="ContentPanel"  Margin="24,0,12,0">
+                <chart:RadCartesianChart x:Name="chart" Height="150" VerticalAlignment="Top" Margin="0,0,0,50" Palette="Warm">
+                    <!--<chart:RadCartesianChart.Grid>
+                    <chart:CartesianChartGrid MajorYLineDashArray="5, 5" MajorLinesVisibility="Y">
+                        <chart:CartesianChartGrid.MajorYLineStyle>
+                            <Style TargetType="Line">
+                                <Setter Property="Stroke" Value="Gray"/>
+                            </Style>
+                        </chart:CartesianChartGrid.MajorYLineStyle>
+                    </chart:CartesianChartGrid>
+                </chart:RadCartesianChart.Grid>-->
+                    <chart:RadCartesianChart.VerticalAxis>
+                        <chart:LinearAxis ShowLabels="False" Visibility="Collapsed" LineStroke="{StaticResource PhoneDisabledBrush}" LineThickness="2"/>
+                    </chart:RadCartesianChart.VerticalAxis>
+                    <chart:RadCartesianChart.HorizontalAxis>
+                        <chart:CategoricalAxis ShowLabels="False"  Visibility="Collapsed" LineStroke="{StaticResource PhoneDisabledBrush}" LineThickness="2"/>
+                    </chart:RadCartesianChart.HorizontalAxis>
+                    <chart:SplineAreaSeries Stroke="#BF3F5A97"  StrokeThickness="0">
+
+                        <chart:SplineAreaSeries.Fill>
+                            <SolidColorBrush Color="#FF3F5A97" Opacity="0.75" />
+                            <!--<SolidColorBrush Color="#FF3F5A97"  Opacity="0.75"/>-->
+                        </chart:SplineAreaSeries.Fill>
+                    </chart:SplineAreaSeries>
+
+                    <chart:SplineAreaSeries Stroke="#BFA5D24A" StrokeThickness="0" >
+
+                        <chart:SplineAreaSeries.Fill>
+                            <SolidColorBrush Color="#FFA5D24A" Opacity="0.75" ></SolidColorBrush>
+                            <!--<SolidColorBrush Color="#FFA5D24A" Opacity="0.75"/>-->
+                        </chart:SplineAreaSeries.Fill>
+                    </chart:SplineAreaSeries>
+
+                    <chart:SplineAreaSeries Stroke="#BFE14F4F"  ShowLabels="False"  StrokeMode="All" StrokeThickness="0">
+
+                        <chart:SplineAreaSeries.Fill>
+                            <SolidColorBrush Color="#FFE14F4F" Opacity="0.75" ></SolidColorBrush>
+                            <!--<SolidColorBrush Color="#FFE14F4F" Opacity="0.75"/>-->
+                        </chart:SplineAreaSeries.Fill>
+                        <!--<chartEngine:CategoricalDataPoint Value="1.0"/>
+                    <chartEngine:CategoricalDataPoint Value="1.9"/>
+                    <chartEngine:CategoricalDataPoint Value="1.9"/>
+                    <chartEngine:CategoricalDataPoint Value="2.3"/>
+                    <chartEngine:CategoricalDataPoint Value="2.1"/>
+                    <chartEngine:CategoricalDataPoint Value="5"/>-->
+                    </chart:SplineAreaSeries>
+
+
+                </chart:RadCartesianChart>
+                <phone:LongListSelector ItemsSource="{Binding PropertieList}" x:Name="PropertieLongList"  VerticalAlignment="Top">
+                    <phone:LongListSelector.ItemTemplate>
+                        <DataTemplate>
+                            <Formaters:ItemTemplateSelector Content="{Binding}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" >
+                                <Formaters:ItemTemplateSelector.DefaultTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="0,0,0,30" HorizontalAlignment="Stretch" >
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="180"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock HorizontalAlignment="Left" Grid.Column="0"  TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26" Margin="0,0,30,0" />
+                                            <RichTextBox HorizontalAlignment="Left" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26" >
+                                                <Paragraph>
+                                                    <Run Text="{Binding Value}"/>                                             
+                                                </Paragraph>
+                                            </RichTextBox>
+                                        </Grid>
+                                    </DataTemplate>
+                                </Formaters:ItemTemplateSelector.DefaultTemplate>
+
+                                <Formaters:ItemTemplateSelector.LocationURLTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="0,0,0,30" HorizontalAlignment="Stretch" >
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="180"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock HorizontalAlignment="Left" Grid.Column="0"  TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26" Margin="0,0,30,0" />
+                                            <RichTextBox HorizontalAlignment="Left" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe WP" FontSize="26" >
+                                                <Paragraph>
+                                                    <!--<Hyperlink NavigateUri="{Binding URL}" TargetName="_blank" Click="Hyperlink_Click" >-->
+                                                    <Hyperlink  Click="Hyperlink_Click" Foreground="{StaticResource PhoneAccentBrush}" >
+                                                            <Run Text="{Binding Value}"/>
+                                                    </Hyperlink>
+                                                </Paragraph>
+                                            </RichTextBox>
+                                        </Grid>
+                                    </DataTemplate>
+                                </Formaters:ItemTemplateSelector.LocationURLTemplate>
+                            </Formaters:ItemTemplateSelector>
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+                </phone:LongListSelector>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

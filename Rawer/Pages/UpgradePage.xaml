@@ -1,0 +1,169 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Rawer.UpgradePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    Background="White"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False" >
+
+    <phone:PhoneApplicationPage.Resources>
+        <ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="TextBox">
+            <ContentControl x:Name="ContentElement" BorderThickness="0" HorizontalContentAlignment="Stretch" Margin="{StaticResource PhoneTextBoxInnerMargin}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="Stretch" FontFamily="Portable User Interface"/>
+        </ControlTemplate>
+        <Style x:Key="TextBlockStyleForToolsList" TargetType="TextBlock" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="25,0,0,0"/>
+            <Setter Property="FontFamily" Value="Segoe WP"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <!--<Image  Source="/Assets/InsideLogo.png" Margin="16,6,0,96" Stretch="Fill" Grid.Row="0" Width="50" Height="50" HorizontalAlignment="Left"/>-->
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,20" Height="244">
+            <Image Source="/Assets/UpgradePic.jpg" />
+            <!--<telerikPrimitives:RadPaginationControl PageProvider="{Binding ElementName=radSlideView}"/>-->
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <RichTextBox TextWrapping="Wrap" FontSize="26" FontFamily="Segoe WP" Foreground="Black">
+                    <Paragraph TextAlignment="Center" >
+                        <Run Text="{Binding Path=LocalizedResources.UpgradePageEditPack, Source={StaticResource LocalizedStrings}}"/>
+                    </Paragraph>
+                    <Paragraph TextAlignment="Center" FontFamily="Segoe WP light">
+                        <Run Text="{Binding Path=LocalizedResources.UpgradePage12Proff, Source={StaticResource LocalizedStrings}}"/>
+                    </Paragraph>
+                </RichTextBox>
+
+                <ScrollViewer Height="370" Margin="0,20,0,0" >
+                    <StackPanel >
+                        <Grid VerticalAlignment="Center" Margin="12,0,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/Triangle-96.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.SharpnessTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/exposure2.png" Width="50" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.ExposureTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/contrast2.png" Width="50" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.ContrastTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/Crop-96.png" Width="50"/>
+                            <TextBlock Grid.Column="1" Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.CropTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/saturation2-chrome.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.SaturationTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/shadows.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.ShadowsTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/Highligths.png" Width="50" />
+                            <TextBlock Grid.Column="1" Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.HighlightsTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/brightness2.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.BrightnessTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/temperature.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.TemperatureTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/resize2.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.ResizeTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/orientation2.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.RotateTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                        <Grid VerticalAlignment="Center" Margin="12,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="/Assets/editicons/hue2-chrome.png" Width="50" />
+                            <TextBlock Grid.Column="1"  Style="{StaticResource TextBlockStyleForToolsList}" Text="{Binding Path=LocalizedResources.HueTool, Source={StaticResource LocalizedStrings}}"/>
+                        </Grid>
+
+                    </StackPanel>
+                </ScrollViewer>
+                <Button Background="#FF3EACEC" BorderBrush="{x:Null}" Tap="Button_BuyTap" Height="85" Content="{Binding Path=LocalizedResources.ViewerPageAppBarUpgrade, Source={StaticResource LocalizedStrings}}" Margin="9,15,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
